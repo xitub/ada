@@ -57,3 +57,17 @@ break;
 }
 }
 }
+int main()
+{
+initializeNodes();
+addDependency(1, 3);
+addDependency(2, 3);
+addDependency(3, 4);
+addDependency(3, 5);
+addDependency(4, 6);
+addDependency(5, 6);
+numNodes = 7;
+printf("Topological Order: ");
+topologicalSort();
+return 0;
+}
